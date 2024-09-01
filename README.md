@@ -7,16 +7,18 @@ It's currently set up to request monthly venmos for a spotify family plan.
 
 #### Local setup
 1. `pip install -r requirements.txt`
-2. Create a `.env` file with the following variables:
+1. Create a `.env` file with the following variables:
     - `VENMO_ACCESS_TOKEN`
     - `VENMO_USERNAMES`
-3. Run `python3 main.py` to request venmo payments.
+1. Update the `spotify_request` parameters in `main.py` 
+1. Run `python3 main.py` to request venmo payments.
 
 #### GitHub Actions
 1. Add the following GitHub secrets to the repository:
     - `VENMO_ACCESS_TOKEN`
     - `VENMO_USERNAMES`
-2. Add a request payments action, using the existing `venmo_request.yml` file, under `.github/workflows`. Update the cron job with the desired frequency.
+1. Update the `spotify_request` parameters in `main.py` 
+1. Add a request payments action, using the existing `venmo_request.yml` file, under `.github/workflows`. Update the cron job with the desired frequency.
 
 ## Venmo Access Token
 
