@@ -6,7 +6,7 @@ import os
 def main():
     spotify_request = {
         "total": 21.31,
-        "usernames": os.getenv("VENMO_USERNAMES").split(",")
+        "usernames": os.getenv("VENMO_USERNAMES").split(","),
         "splitBy": 6,
     }
 
