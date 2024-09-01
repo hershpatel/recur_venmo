@@ -5,12 +5,12 @@ name: Request Spotify Venmo
 
 on:
   schedule:
-    # 4pm UTC on the 7th of the month
-    # https://crontab.guru/#0_16_7_*_*
+    # https://crontab.guru/#0_12_7_*_*
     - cron: "0 12 7 * *"
   workflow_dispatch:
 
 jobs:
+
   run:
     runs-on: ubuntu-latest
 
