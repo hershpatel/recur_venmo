@@ -28,7 +28,7 @@ This will print the access token after the first time you use the library.
 access_token = Client.get_access_token(username='email@email.com', password='******')
 ```
 
-##### Revoke token
+#### Revoke token
 **Note** that your access token never expires! If you want to revoke it, you can do so by calling...
 
 ```
