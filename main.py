@@ -1,7 +1,7 @@
-import os
 from datetime import datetime
-from venmo import Venmo
 from dotenv import load_dotenv
+from venmo import Venmo
+import os
 
 def main():
     spotify_request = {
