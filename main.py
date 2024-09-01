@@ -11,7 +11,7 @@ def main():
     }
 
     now = datetime.now()
-    description = f"TEST - DO NOT ACCEPT - Spotify Premium - {now.strftime('%B %Y')}"
+    description = f"Spotify - {now.strftime('%B %Y')}"
 
     venmo = Venmo(access_token=os.getenv("VENMO_ACCESS_TOKEN"))
 
