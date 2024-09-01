@@ -5,8 +5,9 @@ import os
 
 def main():
     spotify_request = {
-        "total": 21.33,
+        "total": 21.31,
         "usernames": os.getenv("VENMO_USERNAMES").split(",")
+        "splitBy": 6,
     }
 
     now = datetime.now()
@@ -14,7 +15,7 @@ def main():
 
     venmo = Venmo(access_token=os.getenv("VENMO_ACCESS_TOKEN"))
 
-    perUserAmount = spotify_request["total"] / len(spotify_request["usernames"])
+    perUserAmount = spotify_request["total"] / spotify_request["splitBy"]
     venmo_requests = [
         (
             username,
